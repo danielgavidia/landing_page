@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="3">
+    <title>Landing Page</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+
+
+    <style>
+
+        :root {
+            --section_height: 350px;
+            --items_width: 800px;
+            --intro_left_padding: 100px;
+            --intro_items_height: 40px;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100px;
+            background: #1F2937;
+        }
+
+        .navbar_logo {
+            width: 150px;
+            font-size: 24px;
+            color: #F9FAF8;
+            margin-right: auto;
+            margin-left: var(--intro_left_padding);
+            font-weight: bold;
+        }
+
+        .navbar_item {
+            width: 150px;
+            font-size: 18px;
+            color: #E5E7EB;
+            
+        }
+
+        .intro {
+            height: var(--section_height);
+            background: #1F2937;
+            display: flex;
+
+        }
+
+        .intro div {
+            flex: 1 1 0%;
+        }
+
+        .intro_left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 200px;
+        }
+
+        .intro_title {
+            font-size: 48px;
+            font-weight: bolder;
+            color: #F9FAF8;
+            padding-left: var(--intro_left_padding);
+            height: var(--intro_items_height);
+        }
+
+        .intro_message {
+            font-size: 18px;
+            color: #E5E7EB;
+            padding-left: var(--intro_left_padding);
+            height: var(--intro_items_height);
+        }
+
+        .intro_signup {
+            padding-left: var(--intro_left_padding);
+            height: var(--intro_items_height);
+        }
+
+        .button {
+            background-color: #3882F6;
+            color: #F9FAF8;
+            border: #3882F6;
+            border-style: none;
+            border-radius: 5px;
+            font-family: 'Roboto', sans-serif;
+            height: 30px;
+            width: 100px;
+        }
+
+        .intro_right {
+
+        }
+
+        .random_info {
+            background-color: white;
+            height: var(--section_height);
+        }
+
+        .random_info_title {
+            height: 80px;
+            font-size: 36px;
+            font-weight: bolder;
+            color: #1F2937;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .random_info_boxes {
+            height: 140px;
+            width: var(--items_width);
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            align-items:flex-end;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .random_info_boxes div {
+            flex: 1 1 0%;
+        }
+
+        .random_info_single_box {
+            border: 5px;
+            height: 120px;
+            width: 50px;
+            border-color: #3882F6;
+            border-style: solid;
+            border-width: 3px;
+            border-radius: 5%;
+        }
+
+        .random_info_boxes_descriptions {
+            height: 140px;
+            width: var(--items_width);
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            align-items:flex-start;
+            justify-content: space-between;
+            gap: 30px;
+            padding-top: 10px;
+        }
+
+        .random_info_boxes_descriptions div{
+            flex: 1 1 0%;
+        }
+
+        .random_info_single_box_description {
+            font-weight: 100;
+            color: gray;
+            text-align: center;
+        }
+
+        .testimonial {
+            height: 350px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #E5E7EB;
+        }
+
+        .testimonial_quote_text {
+            width: var(--items_width);
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 80px;
+            font-size: 36px;
+            font-style: italic;
+            font-weight: 200;
+            color: #1F2937;
+        }
+
+        .testimonial_quote_author {
+            height: 50px;
+            width: var(--items_width);
+            margin-left: auto;
+            margin-right: auto;
+            text-align: right;
+            font-weight: bolder;
+        }
+
+        .call_action {
+            height: var(--section_height);
+            background-color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        .call_action_box {
+            height: 100px;
+            width: var(--items_width);
+            background-color: #3882F6;
+            color: #F9FAF8;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            border: #3882F6;
+            border-style: none;
+            border-radius: 5px;
+        }
+
+        .call_action_text {
+            flex: 2 1 0%;
+            display: flex;
+            align-items: left;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .call_action_text_top {
+            font-size: 24px;
+            padding-left: 10%;
+        }
+
+        .call_action_text_bottom {
+            font-size: 18px;
+            font-weight: 100;
+            padding-left: 10%;
+        }
+
+        .call_action_signup {
+            flex: 1 1 0%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .call_action_signup_button {
+            background-color: #3882F6;
+            border: #F9FAF8;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 5px;
+            color: #F9FAF8;
+            font-family: 'Roboto', sans-serif;
+            width: 95px;
+            height: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar_logo">Header Logo</div>
+        <div class="navbar_item">Header link one</div>
+        <div class="navbar_item">Header link two</div>
+        <div class="navbar_item">Header link three</div>
+    </div>
+
+    <div class="intro">
+        <div class="intro_left">
+            <div class="intro_title">This website is awesome</div>
+            <div class="intro_message">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</div>
+            <div class="intro_signup">
+                <button class="button">Sign up</button>
+            </div>
+        </div>
+        <div class="intro_right"></div>
+    </div>
+
+    <div class="random_info">
+        <div class="random_info_title">Some random information.</div>
+        <div class="random_info_boxes">
+            <div class="random_info_single_box"></div>
+            <div class="random_info_single_box"></div>
+            <div class="random_info_single_box"></div>
+            <div class="random_info_single_box"></div>
+        </div>
+        <div class="random_info_boxes_descriptions">
+            <div class="random_info_single_box_description">This is some subtext under an illustration or image</div>
+            <div class="random_info_single_box_description">This is some subtext under an illustration or image</div>
+            <div class="random_info_single_box_description">This is some subtext under an illustration or image</div>
+            <div class="random_info_single_box_description">This is some subtext under an illustration or image</div>
+        </div>
+    </div>
+
+    <div class="testimonial">
+        <div class="testimonial_quote_text">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</div>
+        <div class="testimonial_quote_author">-Thor, God of Thunder</div>
+    </div>
+
+    <div class="call_action">
+        <div class="call_action_box">
+            <div class="call_action_text">
+                <div class="call_action_text_top">Call to action! It's time!</div>
+                <div class="call_action_text_bottom">Sign up for our product by clicking that button right over there!</div>
+            </div>
+            <div class="call_action_signup">
+                <button class="call_action_signup_button">Sign up</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
